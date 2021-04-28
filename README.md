@@ -11,11 +11,18 @@ npm install rn-ar-components
 ## Usage
 
 ```js
-import RnArComponents from "rn-ar-components";
+import { ARView, FRView, ImageAnchor } from 'rn-ar-components';
 
 // ...
-
-const result = await RnArComponents.multiply(3, 7);
+<ARView style={{ width: '100%', height: 500 }}>
+  <ImageAnchor
+    name="calc"
+    path="calc_photo"
+    onDetect={(e) => {
+      // e.nativeEvent.name
+    }}
+  />
+</ARView>
 ```
 
 ## Contributing
