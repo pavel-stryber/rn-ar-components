@@ -7,6 +7,8 @@ RN augmented reality components
 ```sh
 npm install rn-ar-components
 ```
+#### On iOS
+If you don't have swift files in your project it is important to add File.swift (it can be empty);
 
 ## Usage
 
